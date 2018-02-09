@@ -1,0 +1,19 @@
+{
+  "name": "clock-in-the-shell",
+  "version": "1.0.0",
+  "description": "graphical representation of anolog clock in the shell",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noweverywhere/shell_clock.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noweverywhere/shell_clock/issues"
+  },
+  "homepage": "https://github.com/noweverywhere/shell_clock#readme"
+}
