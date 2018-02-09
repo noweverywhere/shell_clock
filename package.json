@@ -4,7 +4,8 @@
   "description": "graphical representation of anolog clock in the shell",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "standard && jest",
+    "lint": "standard --fix"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,15 @@
   },
   "homepage": "https://github.com/noweverywhere/shell_clock#readme",
   "devDependencies": {
-    "jest": "^22.2.1"
+    "jest": "^22.2.1",
+    "standard": "^10.0.3"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "expect",
+      "it",
+      "jest"
+    ]
   }
 }
