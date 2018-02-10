@@ -9,7 +9,7 @@
 - rounds the the minute hand down, for example if  21:44 is rounded downto 21:40
 
 ## Examples
-
+```
 8:13
 
           o
@@ -55,3 +55,4 @@ x:1
 "-1:60" is not a valid time
   hours: "-1" can not be smaller than 0
   mintes: "60" can not be greater than 59
+```
