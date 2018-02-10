@@ -1,11 +1,13 @@
 const renderClockTime = require('./lib/clock').renderClockTime
+const { stringToTimeObject, dateToTimeObject } = require('./lib/time')
 const timeArg = process.argv[2]
-let currentDateTime
+const timeObject = (timeArg)
+  ? stringToTimeObject(timeArg) : dateToTimeObject(new Date())
 
-if (!timeArg) {
-  currentDateTime = new Date()
-  renderClockTime({
-    hours: currentDateTime.getHours(),
-    minutes: currentDateTime.getMinutes()
-  })
+if (timeObject.valid) {
+  renderClockTime(timeObject).map((x) => console.log(x))
+} else {
+  console.log(
+    `"${timeArg}" is not a valid time\n\t${timeObject.errors.join('\n\t')}`
+  )
 }

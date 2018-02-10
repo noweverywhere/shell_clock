@@ -40,3 +40,18 @@ o         +         o
 
     x           o
           o
+
+---
+
+x:1
+
+"x:1" is not a valid time
+  hours: "x" is not an integer
+  mintes: "1" is ambiguous
+---
+
+-1:60
+
+"-1:60" is not a valid time
+  hours: "-1" can not be smaller than 0
+  mintes: "60" can not be greater than 59
